@@ -10,11 +10,6 @@ from flask_heroku import Heroku
 app = Flask(__name__)
 heroku = Heroku(app)
 
-app = Flask(__name__)
-app.secret_key = "cscie14a-hw3"
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/hw_3'
-
 db.init_app(app)
 
 
